@@ -18,4 +18,8 @@ export class ProductsService {
     return of(this.data)
   }
 
+  getProduct(id: number) {
+    return of(this.data.find(p => p.id == id));
+  }
+
 }
